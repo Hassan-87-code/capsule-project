@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Houses | NyumbaFind</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-gray-50 text-gray-800">
+
+
+
+
+<nav class="bg-white shadow sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+        <a href="index.html"
+           class="text-2xl font-bold text-green-600">
+            Nyumba<span class="text-gray-800">Find</span>
+        </a>
+
+
+        <div class="hidden md:flex gap-7">
+
+            <a href="index.html" class="hover:text-green-600">Home</a>
+
+            <a href="houses.html"
+               class="text-green-600 font-bold">
+                Houses
+            </a>
+
+           
+
+            <a href="areas.html"
+               class="hover:text-green-600">
+                Areas
+            </a>
+
+            <a href="contact.html"
+               class="hover:text-green-600">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<section class="bg-green-700 text-white py-16">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <h1 class="text-4xl md:text-5xl font-bold">
+            Houses for Rent in Nairobi
+        </h1>
+
+        <p class="mt-4 text-green-100">
+            Find houses that match your location, budget and lifestyle.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FILTERS -->
+
+<section class="max-w-7xl mx-auto px-4 -mt-8">
+
+    <div class="bg-white p-6 rounded-2xl shadow-lg">
+
+        <div class="grid md:grid-cols-4 gap-4">
+
+            <div>
+
+                <label class="font-semibold">
+                    Search
+                </label>
+
+                <input
+                    id="houseSearch"
+                    type="text"
+                    placeholder="Search location..."
+                    class="w-full border p-3 rounded-lg mt-2"
+                >
+
+            </div>
+
+
+            <div>
+
+                <label class="font-semibold">
+                    House Type
+                </label>
+
+                <select id="houseType"
+                        class="w-full border p-3 rounded-lg mt-2">
+
+                    <option value="">All Types</option>
+                    <option value="Bedsitter">Bedsitter</option>
+                    <option value="1 Bedroom">1 Bedroom</option>
+                    <option value="2 Bedroom">2 Bedroom</option>
+                    <option value="3 Bedroom">3 Bedroom</option>
+                    <option value="Maisonette">Maisonette</option>
+
+                </select>
+
+            </div>
+
+
+            <div>
+
+                <label class="font-semibold">
+                    Maximum Rent
+                </label>
+
+                <select id="houseBudget"
+                        class="w-full border p-3 rounded-lg mt-2">
+
+                    <option value="">Any Budget</option>
+                    <option value="15000">KSh 15,000</option>
+                    <option value="20000">KSh 20,000</option>
+                    <option value="30000">KSh 30,000</option>
+                    <option value="50000">KSh 50,000</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="flex items-end">
+
+                <button
+                    onclick="filterHouses()"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white p-3 rounded-lg font-bold">
+
+                    Filter Houses
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOUSE LISTINGS -->
+
+<section class="py-16">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <div class="flex justify-between items-center mb-8">
+
+            <h2 class="text-3xl font-bold">
+                Available Houses
+            </h2>
+
+            <span id="houseCount"
+                  class="text-gray-500">
+            </span>
+
+        </div>
+
+
+        <div id="houseListings"
+             class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 text-white py-10">
+
+    <div class="max-w-7xl mx-auto px-4 text-center">
+
+        <h2 class="text-2xl font-bold">
+            Nyumba<span class="text-green-500">Find</span>
+        </h2>
+
+        <p class="text-gray-400 mt-3">
+            Find your home in Nairobi.
+        </p>
+
+        <p class="text-gray-500 mt-6">
+            © 2026 NyumbaFind Student Project
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

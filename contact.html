@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | NyumbaFind</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-gray-50 text-gray-800">
+
+
+
+<nav class="bg-white shadow sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+        <a href="index.html"
+           class="text-2xl font-bold text-green-600">
+
+            Nyumba<span class="text-gray-800">Find</span>
+
+        </a>
+
+
+        <div class="hidden md:flex gap-7">
+
+            <a href="index.html" class="hover:text-green-600">
+                Home
+            </a>
+
+            <a href="houses.html" class="hover:text-green-600">
+                Houses
+            </a>
+
+            <a href="apartments.html" class="hover:text-green-600">
+                Apartments
+            </a>
+
+            <a href="areas.html" class="hover:text-green-600">
+                Areas
+            </a>
+
+            <a href="contact.html"
+               class="text-green-600 font-bold">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<section class="bg-green-700 text-white py-16">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <h1 class="text-4xl md:text-5xl font-bold">
+            Contact NyumbaFind
+        </h1>
+
+        <p class="mt-4 text-green-100">
+            Have a question about a house? Get in touch with us.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="py-16">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+        <div class="grid md:grid-cols-2 gap-10">
+
+
+        
+
+            <div>
+
+                <h2 class="text-3xl font-bold">
+                    Get in Touch
+                </h2>
+
+                <p class="text-gray-600 mt-4">
+                    Whether you are looking for a house, apartment or
+                    information about an area, we are here to help.
+                </p>
+
+
+                <div class="mt-8 space-y-5">
+
+                    <div class="bg-white p-5 rounded-xl shadow">
+
+                        <h3 class="font-bold">
+                            📍 Location
+                        </h3>
+
+                        <p class="text-gray-600 mt-1">
+                            Nairobi, Kenya
+                        </p>
+
+                    </div>
+
+
+                    <div class="bg-white p-5 rounded-xl shadow">
+
+                        <h3 class="font-bold">
+                            📞 Phone
+                        </h3>
+
+                        <p class="text-gray-600 mt-1">
+                            +254 727764868
+                        </p>
+
+                    </div>
+
+
+                    <div class="bg-white p-5 rounded-xl shadow">
+
+                        <h3 class="font-bold">
+                            ✉ Email
+                        </h3>
+
+                        <p class="text-gray-600 mt-1">
+                            info@nyumbafind.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+         
+            <div class="bg-white p-8 rounded-2xl shadow">
+
+                <h2 class="text-2xl font-bold mb-6">
+                    Send Us a Message
+                </h2>
+
+
+                <form id="contactForm">
+
+
+                    <div class="mb-5">
+
+                        <label class="font-semibold">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            required
+                            placeholder="Enter your name"
+                            class="w-full border p-3 rounded-lg mt-2"
+                        >
+
+                    </div>
+
+
+                    <div class="mb-5">
+
+                        <label class="font-semibold">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            required
+                            placeholder="Enter your email"
+                            class="w-full border p-3 rounded-lg mt-2"
+                        >
+
+                    </div>
+
+
+                    <div class="mb-5">
+
+                        <label class="font-semibold">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            required
+                            placeholder="What can we help you with?"
+                            class="w-full border p-3 rounded-lg mt-2"
+                        >
+
+                    </div>
+
+
+                    <div class="mb-5">
+
+                        <label class="font-semibold">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            required
+                            rows="5"
+                            placeholder="Write your message..."
+                            class="w-full border p-3 rounded-lg mt-2">
+                        </textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="w-full bg-green-600 hover:bg-green-700 text-white p-3 rounded-lg font-bold">
+
+                        Send Message
+
+                    </button>
+
+
+                    <p id="formMessage"
+                       class="mt-4 text-center font-semibold">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="bg-gray-900 text-white py-10 text-center">
+
+    <h2 class="text-2xl font-bold">
+        Nyumba<span class="text-green-500">Find</span>
+    </h2>
+
+    <p class="text-gray-500 mt-5">
+        © 2026 NyumbaFind Student Project
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
