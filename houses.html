@@ -4,7 +4,11 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Find houses for rent in Kileleshwa, Muthaiga, South C, Lavington, Westlands and Parklands.">
 
     <title>Houses | NyumbaFind</title>
 
@@ -16,202 +20,313 @@
 <body class="bg-gray-50 text-gray-800">
 
 
+    
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="flex justify-between items-center h-16">
+
+                <a href="index.html"
+                    class="text-2xl font-bold text-blue-600">
+
+                    Nyumba<span class="text-gray-800">
+                        Find
+                    </span>
+
+                </a>
 
 
-<nav class="bg-white shadow sticky top-0 z-50">
+                <div class="hidden md:flex space-x-6">
 
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                    <a href="index.html"
+                        class="hover:text-blue-600">
+                        Home
+                    </a>
 
-        <a href="index.html"
-           class="text-2xl font-bold text-green-600">
-            Nyumba<span class="text-gray-800">Find</span>
-        </a>
+                    <a href="houses.html"
+                        class="text-blue-600 font-semibold">
+                        Houses
+                    </a>
 
+                   
+                    <a href="areas.html"
+                        class="hover:text-blue-600">
+                        Areas
+                    </a>
 
-        <div class="hidden md:flex gap-7">
+                    <a href="contact.html"
+                        class="hover:text-blue-600">
+                        Contact
+                    </a>
 
-            <a href="index.html" class="hover:text-green-600">Home</a>
-
-            <a href="houses.html"
-               class="text-green-600 font-bold">
-                Houses
-            </a>
-
-           
-
-            <a href="areas.html"
-               class="hover:text-green-600">
-                Areas
-            </a>
-
-            <a href="contact.html"
-               class="hover:text-green-600">
-                Contact
-            </a>
-
-        </div>
-
-    </div>
-
-</nav>
+                </div>
 
 
-<!-- HEADER -->
+                <button id="menuButton"
+                    class="md:hidden text-2xl">
 
-<section class="bg-green-700 text-white py-16">
-
-    <div class="max-w-7xl mx-auto px-4">
-
-        <h1 class="text-4xl md:text-5xl font-bold">
-            Houses for Rent in Nairobi
-        </h1>
-
-        <p class="mt-4 text-green-100">
-            Find houses that match your location, budget and lifestyle.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- FILTERS -->
-
-<section class="max-w-7xl mx-auto px-4 -mt-8">
-
-    <div class="bg-white p-6 rounded-2xl shadow-lg">
-
-        <div class="grid md:grid-cols-4 gap-4">
-
-            <div>
-
-                <label class="font-semibold">
-                    Search
-                </label>
-
-                <input
-                    id="houseSearch"
-                    type="text"
-                    placeholder="Search location..."
-                    class="w-full border p-3 rounded-lg mt-2"
-                >
-
-            </div>
-
-
-            <div>
-
-                <label class="font-semibold">
-                    House Type
-                </label>
-
-                <select id="houseType"
-                        class="w-full border p-3 rounded-lg mt-2">
-
-                    <option value="">All Types</option>
-                    <option value="Bedsitter">Bedsitter</option>
-                    <option value="1 Bedroom">1 Bedroom</option>
-                    <option value="2 Bedroom">2 Bedroom</option>
-                    <option value="3 Bedroom">3 Bedroom</option>
-                    <option value="Maisonette">Maisonette</option>
-
-                </select>
-
-            </div>
-
-
-            <div>
-
-                <label class="font-semibold">
-                    Maximum Rent
-                </label>
-
-                <select id="houseBudget"
-                        class="w-full border p-3 rounded-lg mt-2">
-
-                    <option value="">Any Budget</option>
-                    <option value="15000">KSh 15,000</option>
-                    <option value="20000">KSh 20,000</option>
-                    <option value="30000">KSh 30,000</option>
-                    <option value="50000">KSh 50,000</option>
-
-                </select>
-
-            </div>
-
-
-            <div class="flex items-end">
-
-                <button
-                    onclick="filterHouses()"
-                    class="w-full bg-green-600 hover:bg-green-700 text-white p-3 rounded-lg font-bold">
-
-                    Filter Houses
+                    ☰
 
                 </button>
 
             </div>
 
-        </div>
 
-    </div>
+            <div id="mobileMenu"
+                class="hidden md:hidden pb-4">
 
-</section>
+                <a href="index.html"
+                    class="block py-2">
+                    Home
+                </a>
 
+                <a href="houses.html"
+                    class="block py-2 text-blue-600">
+                    Houses
+                </a>
 
-<!-- HOUSE LISTINGS -->
+                
+                <a href="areas.html"
+                    class="block py-2">
+                    Areas
+                </a>
 
-<section class="py-16">
+                <a href="contact.html"
+                    class="block py-2">
+                    Contact
+                </a>
 
-    <div class="max-w-7xl mx-auto px-4">
-
-        <div class="flex justify-between items-center mb-8">
-
-            <h2 class="text-3xl font-bold">
-                Available Houses
-            </h2>
-
-            <span id="houseCount"
-                  class="text-gray-500">
-            </span>
-
-        </div>
-
-
-        <div id="houseListings"
-             class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
 
         </div>
 
-    </div>
-
-</section>
+    </nav>
 
 
-<!-- FOOTER -->
+    
 
-<footer class="bg-gray-900 text-white py-10">
+    <section class="bg-blue-600 text-white py-14">
 
-    <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="max-w-7xl mx-auto px-4">
 
-        <h2 class="text-2xl font-bold">
-            Nyumba<span class="text-green-500">Find</span>
-        </h2>
+            <h1 class="text-4xl font-bold">
+                Houses for Rent in Nairobi
+            </h1>
 
-        <p class="text-gray-400 mt-3">
-            Find your home in Nairobi.
-        </p>
+            <p class="mt-3 text-blue-100">
+                Find available houses in our six selected areas.
+            </p>
 
-        <p class="text-gray-500 mt-6">
-            © 2026 NyumbaFind Student Project
-        </p>
+        </div>
 
-    </div>
-
-</footer>
+    </section>
 
 
-<script src="script.js"></script>
+
+    <section class="py-8">
+
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="bg-white rounded-xl shadow p-5">
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+
+                   
+
+                    <div>
+
+                        <label for="houseSearch"
+                            class="block text-sm font-semibold mb-1">
+
+                            Search Location
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="houseSearch"
+                            placeholder="e.g. Kileleshwa"
+                            class="w-full border rounded-lg px-3 py-3">
+
+                    </div>
+
+
+                    <!-- TYPE -->
+
+                    <div>
+
+                        <label for="houseType"
+                            class="block text-sm font-semibold mb-1">
+
+                            House Type
+
+                        </label>
+
+                        <select id="houseType"
+                            class="w-full border rounded-lg px-3 py-3">
+
+                            <option value="">
+                                All Types
+                            </option>
+
+                            <option value="Bedsitter">
+                                Bedsitter
+                            </option>
+
+                            <option value="1 Bedroom">
+                                1 Bedroom
+                            </option>
+
+                            <option value="2 Bedroom">
+                                2 Bedroom
+                            </option>
+
+                            <option value="3 Bedroom">
+                                3 Bedroom
+                            </option>
+
+                            <option value="Main house">
+                                Main house
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    
+
+                    <div>
+
+                        <label for="houseBudget"
+                            class="block text-sm font-semibold mb-1">
+
+                            Maximum Rent
+
+                        </label>
+
+                        <select id="houseBudget"
+                            class="w-full border rounded-lg px-3 py-3">
+
+                            <option value="">
+                                Any Budget
+                            </option>
+
+                            <option value="15000">
+                                KSh 15,000
+                            </option>
+
+                            <option value="20000">
+                                KSh 20,000
+                            </option>
+
+                            <option value="30000">
+                                KSh 30,000
+                            </option>
+
+                            <option value="50000">
+                                KSh 50,000
+                            </option>
+
+                            <option value="75000">
+                                KSh 75,000
+                            </option>
+
+                            <option value="150000">
+                                KSh 150,000
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                 
+
+                    <div class="flex items-end">
+
+                        <button
+                            onclick="filterHouses()"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg">
+
+                            Search
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <section class="pb-16">
+
+        <div class="max-w-7xl mx-auto px-4">
+
+
+            <div class="flex justify-between items-center mb-6">
+
+                <h2 class="text-2xl font-bold">
+                    Available Houses
+                </h2>
+
+                <p class="text-gray-600">
+
+                    <span id="houseCount">0</span>
+                    properties
+
+                </p>
+
+            </div>
+
+
+           
+
+            <div id="houseListings"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-gray-900 text-white py-8">
+
+        <div class="max-w-7xl mx-auto px-4 text-center">
+
+            <h3 class="text-xl font-bold">
+                NyumbaFind
+            </h3>
+
+            <p class="text-gray-400 mt-2">
+                Find Your Home in Nairobi
+            </p>
+
+            <p class="text-gray-500 text-sm mt-4">
+                © 2026 NyumbaFind
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

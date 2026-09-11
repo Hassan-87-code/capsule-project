@@ -1,399 +1,88 @@
+
 const houses = [
 
-   
     {
-        name: "Modern Bedsitter Kasarani",
-        location: "Kasarani",
-        type: "Bedsitter",
-        price: 10000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Kasarani One Bedroom",
-        location: "Kasarani",
-        type: "1 Bedroom",
-        price: 15000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Kasarani Family Apartment",
-        location: "Kasarani",
-        type: "2 Bedroom",
-        price: 25000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-
-
-
-    {
-        name: "Embakasi Cozy Bedsitter",
-        location: "Embakasi",
-        type: "Bedsitter",
-        price: 9000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Embakasi One Bedroom",
-        location: "Embakasi",
-        type: "1 Bedroom",
-        price: 13000,
-        image: "https://nation.africa/resource/image/4412500/landscape_ratio16x9/1600/900/dfaf8bbe6c58a7b711bd840137dee21f/Ft/kirima-land.jpg"
-    },
-
-    {
-        name: "Embakasi Two Bedroom",
-        location: "Embakasi",
-        type: "2 Bedroom",
-        price: 22000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Embakasi Family Three Bedroom",
-        location: "Embakasi",
-        type: "3 Bedroom",
-        price: 32000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-
-   
-
-    {
-        name: "South B Affordable Bedsitter",
-        location: "South B",
-        type: "Bedsitter",
-        price: 10000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "South B Modern One Bedroom",
-        location: "South B",
-        type: "1 Bedroom",
-        price: 16000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "South B Two Bedroom",
-        location: "South B",
-        type: "2 Bedroom",
-        price: 25000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "South B Family Three Bedroom",
-        location: "South B",
-        type: "3 Bedroom",
-        price: 35000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-
-  
-
-    {
-        name: "South C Budget Bedsitter",
-        location: "South C",
-        type: "Bedsitter",
-        price: 11000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "South C One Bedroom",
-        location: "South C",
-        type: "1 Bedroom",
-        price: 17000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "South C Two Bedroom",
-        location: "South C",
-        type: "2 Bedroom",
-        price: 28000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-
-    
-
-    {
-        name: "Langata Modern Bedsitter",
-        location: "Langata",
-        type: "Bedsitter",
-        price: 10000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Langata One Bedroom",
-        location: "Langata",
-        type: "1 Bedroom",
-        price: 16000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Langata Two Bedroom",
-        location: "Langata",
-        type: "2 Bedroom",
-        price: 28000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-    {
-        name: "Langata Family Three Bedroom",
-        location: "Langata",
-        type: "3 Bedroom",
-        price: 50000,
-        image: "https://nation.africa/resource/image/4412500/landscape_ratio16x9/1600/900/dfaf8bbe6c58a7b711bd840137dee21f/Ft/kirima-land.jpg"
-    },
-
-
-
-    {
-        name: "Kilimani Affordable Bedsitter",
-        location: "Kilimani",
-        type: "Bedsitter",
-        price: 15000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Kilimani One Bedroom",
-        location: "Kilimani",
-        type: "1 Bedroom",
-        price: 25000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Kilimani Modern Two Bedroom",
-        location: "Kilimani",
-        type: "2 Bedroom",
-        price: 35000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Kilimani Luxury Three Bedroom",
-        location: "Kilimani",
-        type: "3 Bedroom",
-        price: 55000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-
-
-    {
-        name: "Kileleshwa Bedsitter",
-        location: "Kileleshwa",
-        type: "Bedsitter",
-        price: 18000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Kileleshwa One Bedroom",
-        location: "Kileleshwa",
-        type: "1 Bedroom",
-        price: 30000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Kileleshwa Luxury Two Bedroom",
+        id: 1,
+        name: "Modern House in Kileleshwa",
         location: "Kileleshwa",
         type: "2 Bedroom",
         price: 60000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
+        bedrooms: 2,
+        bathrooms: 2,
+        parking: true,
+        image: "kileleshwa2bed.jpg"
     },
 
     {
-        name: "Kileleshwa Luxury Three Bedroom",
-        location: "Kileleshwa",
+        id: 2,
+        name: "Elegant House in Muthaiga",
+        location: "Muthaiga",
         type: "3 Bedroom",
-        price: 85000,
-        image: "https://sirfrancismarketingltd.co.ke/wp-content/uploads/2021/05/WhatsApp-Image-2021-05-11-at-09.21.44.jpeg"
-    },
-
-
-   
-
-    {
-        name: "Roysambu Modern Bedsitter",
-        location: "Roysambu",
-        type: "Bedsitter",
-        price: 9000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
+        price: 95000,
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: true,
+        image: "muthaiga3bed.jpg"
     },
 
     {
-        name: "Roysambu One Bedroom",
-        location: "Roysambu",
-        type: "1 Bedroom",
-        price: 14000,
-        image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/805160352.jpg?k=1b4583f77b0c46ad48ca074af750ce67a8cd8b66ebdecb5ec01616f249041af5&o="
-    },
-
-    {
-        name: "Roysambu Two Bedroom",
-        location: "Roysambu",
+        id: 3,
+        name: "Cozy House in South C",
+        location: "South C",
         type: "2 Bedroom",
-        price: 30000,
-        image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/805160352.jpg?k=1b4583f77b0c46ad48ca074af750ce67a8cd8b66ebdecb5ec01616f249041af5&o="
-    },
-
-    {
-        name: "Spacious Maisonette Roysambu",
-        location: "Roysambu",
-        type: "Maisonette",
-        price: 105000,
-        image: "https://nation.africa/resource/image/4412500/landscape_ratio16x9/1600/900/dfaf8bbe6c58a7b711bd840137dee21f/Ft/kirima-land.jpg"
-    },
-
-
-    
-
-    {
-        name: "Westlands Bedsitter",
-        location: "Westlands",
-        type: "Bedsitter",
-        price: 20000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Westlands One Bedroom",
-        location: "Westlands",
-        type: "1 Bedroom",
         price: 28000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
+        bedrooms: 2,
+        bathrooms: 2,
+        parking: true,
+        image: "southc2bed.jpg"
     },
 
     {
-        name: "Westlands Two Bedroom",
+        id: 4,
+        name: "Spacious House in Lavington",
+        location: "Lavington",
+        type: "3 Bedroom",
+        price: 75000,
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: true,
+        image: "lavington3bed.jpg"
+    },
+
+    {
+        id: 5,
+        name: "Modern House in Westlands",
         location: "Westlands",
         type: "2 Bedroom",
         price: 45000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
+        bedrooms: 2,
+        bathrooms: 2,
+        parking: true,
+        image: "westland2bed.jpg"
     },
 
     {
-        name: "Westlands Three Bedroom",
-        location: "Westlands",
+        id: 6,
+        name: "Family House in Parklands",
+        location: "Parklands",
         type: "3 Bedroom",
-        price: 70000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-
-    
-
-    {
-        name: "Donholm Bedsitter",
-        location: "Donholm",
-        type: "Bedsitter",
-        price: 9000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Donholm One Bedroom",
-        location: "Donholm",
-        type: "1 Bedroom",
-        price: 14000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Donholm Two Bedroom",
-        location: "Donholm",
-        type: "2 Bedroom",
-        price: 23000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-
-    
-
-    {
-        name: "Karen One Bedroom",
-        location: "Karen",
-        type: "1 Bedroom",
-        price: 35000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Karen Two Bedroom",
-        location: "Karen",
-        type: "2 Bedroom",
-        price: 55000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Karen Family Three Bedroom",
-        location: "Karen",
-        type: "3 Bedroom",
-        price: 80000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
-    },
-
-    {
-        name: "Karen Spacious Maisonette",
-        location: "Karen",
-        type: "Maisonette",
-        price: 150000,
-        image: "https://nation.africa/resource/image/4412500/landscape_ratio16x9/1600/900/dfaf8bbe6c58a7b711bd840137dee21f/Ft/kirima-land.jpg"
-    },
-
-
-   
-
-    {
-        name: "Umoja Modern Bedsitter",
-        location: "Umoja",
-        type: "Bedsitter",
-        price: 8000,
-        image: "https://images.trvl-media.com/lodging/118000000/117040000/117038400/117038367/ea017e43.jpg"
-    },
-
-    {
-        name: "Umoja One Bedroom",
-        location: "Umoja",
-        type: "1 Bedroom",
-        price: 12000,
-        image: "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052279/99e6b365.jpg"
-    },
-
-    {
-        name: "Umoja Two Bedroom",
-        location: "Umoja",
-        type: "2 Bedroom",
-        price: 20000,
-        image: "https://images.trvl-media.com/lodging/97000000/96730000/96722500/96722418/e4ab37a7.jpg"
+        price: 65000,
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: true,
+        image: "parkland3bed.jpg"
     }
 
 ];
 
 
 
+
 function formatPrice(price) {
 
-    return "KSh " + price.toLocaleString() + "/month";
+    return `KSh ${price.toLocaleString()} / month`;
 
 }
-
 
 
 
@@ -401,7 +90,7 @@ function createPropertyCard(property) {
 
     return `
 
-        <div class="bg-white rounded-2xl shadow-md overflow-hidden
+        <div class="bg-white rounded-xl shadow-md overflow-hidden
                     hover:shadow-xl transition duration-300">
 
             <img
@@ -412,53 +101,70 @@ function createPropertyCard(property) {
 
             <div class="p-5">
 
-                <div class="flex justify-between items-center">
+                <!-- PROPERTY NAME -->
 
-                    <span class="bg-green-100 text-green-700
-                                 px-3 py-1 rounded-full text-sm font-semibold">
+                <h3 class="text-xl font-bold text-gray-800">
+                    ${property.name}
+                </h3>
+
+
+                 <!-- location -->
+
+                <p class="text-gray-500 mt-1">
+                    📍 ${property.location}
+                </p>
+
+
+                <!-- HOUSE TYPE -->
+
+                <div class="mt-4">
+
+                    <span class="bg-blue-100 text-blue-700
+                                 px-3 py-1 rounded-full text-sm">
 
                         ${property.type}
 
                     </span>
 
-                    <span class="text-green-600 font-bold">
+                </div>
 
-                        ${formatPrice(property.price)}
 
+                <!-- PRICE -->
+
+                <p class="text-2xl font-bold text-blue-600 mt-4">
+
+                    ${formatPrice(property.price)}
+
+                </p>
+
+
+                
+
+                <div class="flex flex-wrap gap-4
+                            text-sm text-gray-600 mt-4">
+
+                    <span>
+                        🛏️ ${property.bedrooms} Bedrooms
+                    </span>
+
+                    <span>
+                        🚿 ${property.bathrooms} Bathrooms
+                    </span>
+
+                    <span>
+                        🚗 ${property.parking ? "Parking" : "No Parking"}
                     </span>
 
                 </div>
 
 
-                <h3 class="text-xl font-bold mt-4">
-
-                    ${property.name}
-
-                </h3>
-
-
-                <p class="text-gray-500 mt-2">
-
-                    📍 ${property.location}, Nairobi
-
-                </p>
-
-
-                <div class="flex gap-4 text-sm text-gray-500 mt-4">
-
-                    <span>🛏 Bedroom</span>
-
-                    <span>🚿 Bathroom</span>
-
-                    <span>🚗 Parking</span>
-
-                </div>
-
+                <!-- BUTTON -->
 
                 <button
-                    onclick="viewProperty('${property.name}')"
-                    class="w-full mt-5 bg-green-600 hover:bg-green-700
-                           text-white py-3 rounded-lg font-semibold">
+                    onclick="viewProperty('${property.name}', '${property.location}')"
+                    class="w-full mt-5 bg-blue-600
+                           hover:bg-blue-700 text-white
+                           font-semibold py-3 rounded-lg">
 
                     View Property
 
@@ -480,49 +186,55 @@ function displayHouses(list = houses) {
     const container =
         document.getElementById("houseListings");
 
+    const count =
+        document.getElementById("houseCount");
+
+
     if (!container) {
         return;
     }
 
 
+    
+
     if (list.length === 0) {
 
         container.innerHTML = `
 
-            <div class="col-span-full text-center py-16">
+            <div class="col-span-full bg-white
+                        rounded-xl shadow p-10 text-center">
 
-                <div class="text-6xl">
-                    🏠
-                </div>
-
-                <h2 class="text-2xl font-bold mt-4">
+                <h3 class="text-2xl font-bold text-gray-800">
                     No houses found
-                </h2>
+                </h3>
 
-                <p class="text-gray-500 mt-2">
-                    Try changing your search or filter.
+                <p class="text-gray-600 mt-3">
+                    Try another location, house type
+                    or budget.
                 </p>
 
             </div>
 
         `;
 
+        if (count) {
+            count.textContent = "0";
+        }
+
         return;
     }
 
 
-    container.innerHTML =
-        list.map(createPropertyCard).join("");
+    
+
+    container.innerHTML = list
+        .map(createPropertyCard)
+        .join("");
 
 
-    const count =
-        document.getElementById("houseCount");
 
     if (count) {
-
-        count.textContent =
-            `${list.length} properties found`;
-
+        count.textContent = list.length;
     }
 
 }
@@ -542,112 +254,106 @@ function filterHouses() {
         document.getElementById("houseBudget");
 
 
-    const search =
-        searchInput
-            ? searchInput.value.toLowerCase()
-            : "";
+    const search = searchInput
+        ? searchInput.value.toLowerCase().trim()
+        : "";
 
 
-    const type =
-        typeInput
-            ? typeInput.value
-            : "";
+    const selectedType = typeInput
+        ? typeInput.value
+        : "";
 
 
-    const budget =
-        budgetInput
-            ? Number(budgetInput.value)
-            : 0;
+    const selectedBudget = budgetInput
+        ? Number(budgetInput.value)
+        : 0;
 
 
-    const filtered =
-        houses.filter(house => {
+    const filteredHouses = houses.filter(property => {
 
-            const matchesSearch =
-                house.location
-                    .toLowerCase()
-                    .includes(search) ||
+       
 
-                house.name
-                    .toLowerCase()
-                    .includes(search);
-
-
-            const matchesType =
-                type === "" ||
-                house.type === type;
+        const matchesLocation =
+            !search ||
+            property.location
+                .toLowerCase()
+                .includes(search) ||
+            property.name
+                .toLowerCase()
+                .includes(search);
 
 
-            const matchesBudget =
-                budget === 0 ||
-                house.price <= budget;
+       
+
+        const matchesType =
+            !selectedType ||
+            property.type === selectedType;
 
 
-            return (
-                matchesSearch &&
-                matchesType &&
-                matchesBudget
-            );
+      
 
-        });
+        const matchesBudget =
+            !selectedBudget ||
+            property.price <= selectedBudget;
 
 
-    displayHouses(filtered);
+        return (
+            matchesLocation &&
+            matchesType &&
+            matchesBudget
+        );
 
-}
-
-
-
-
-function displayApartments() {
-
-    const container =
-        document.getElementById("apartmentListings");
+    });
 
 
-    if (!container) {
-        return;
-    }
-
-
-    container.innerHTML =
-        apartments
-            .map(createPropertyCard)
-            .join("");
+    displayHouses(filteredHouses);
 
 }
-
 
 
 
 function searchFromHome() {
 
     const location =
-        document.getElementById("homeLocation").value;
+        document.getElementById("homeLocation")?.value || "";
 
     const type =
-        document.getElementById("homeType").value;
+        document.getElementById("homeType")?.value || "";
 
     const budget =
-        document.getElementById("homeBudget").value;
+        document.getElementById("homeBudget")?.value || "";
 
 
-    const params =
-        new URLSearchParams();
+    const params = new URLSearchParams();
 
 
     if (location) {
-        params.set("location", location);
+
+        params.set(
+            "location",
+            location
+        );
+
     }
 
 
     if (type) {
-        params.set("type", type);
+
+        params.set(
+            "type",
+            type
+        );
+
     }
 
 
     if (budget) {
-        params.set("budget", budget);
+
+        params.set(
+            "budget",
+            budget
+        );
+
     }
 
 
@@ -658,11 +364,12 @@ function searchFromHome() {
 
 
 
-
 function applyURLFilters() {
 
     const params =
-        new URLSearchParams(window.location.search);
+        new URLSearchParams(
+            window.location.search
+        );
 
 
     const location =
@@ -675,126 +382,78 @@ function applyURLFilters() {
         params.get("budget");
 
 
-    if (!location && !type && !budget) {
-
-        displayHouses();
-
-        return;
-
-    }
-
-
     const searchInput =
         document.getElementById("houseSearch");
 
-
     const typeInput =
         document.getElementById("houseType");
-
 
     const budgetInput =
         document.getElementById("houseBudget");
 
 
+    
+
     if (searchInput && location) {
 
-        searchInput.value = location;
+        searchInput.value =
+            location;
 
     }
 
+
+   
 
     if (typeInput && type) {
 
-        typeInput.value = type;
+        typeInput.value =
+            type;
 
     }
 
+
+   
 
     if (budgetInput && budget) {
 
-        budgetInput.value = budget;
+        budgetInput.value =
+            budget;
 
     }
 
 
-    filterHouses();
+    
+
+    if (
+        location ||
+        type ||
+        budget
+    ) {
+
+        filterHouses();
+
+    } else {
+
+        displayHouses();
+
+    }
 
 }
 
 
 
 
-function viewProperty(name) {
+function viewProperty(
+    name,
+    location
+) {
 
     alert(
-        "You selected: " +
-        name +
-        "\n\nContact NyumbaFind for more information."
+        `You selected ${name} in ${location}.\n\n` +
+        `Property details will be available here.`
     );
 
 }
-
-
-
-
-const menuButton =
-    document.getElementById("menuButton");
-
-const mobileMenu =
-    document.getElementById("mobileMenu");
-
-
-if (menuButton && mobileMenu) {
-
-    menuButton.addEventListener(
-        "click",
-        function () {
-
-            mobileMenu.classList.toggle("hidden");
-
-        }
-    );
-
-}
-
-
-
-
-const contactForm =
-    document.getElementById("contactForm");
-
-
-if (contactForm) {
-
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
-
-            event.preventDefault();
-
-
-            const name =
-                document.getElementById("name").value;
-
-
-            const message =
-                document.getElementById("formMessage");
-
-
-            message.textContent =
-                `Thank you ${name}! Your message has been received.`;
-
-            message.className =
-                "mt-4 text-center font-semibold text-green-600";
-
-
-            contactForm.reset();
-
-        } 
-    );
-
-}
-
 
 
 
@@ -802,8 +461,45 @@ document.addEventListener(
     "DOMContentLoaded",
     function () {
 
+
+       
+
+        const menuButton =
+            document.getElementById(
+                "menuButton"
+            );
+
+        const mobileMenu =
+            document.getElementById(
+                "mobileMenu"
+            );
+
+
         if (
-            document.getElementById("houseListings")
+            menuButton &&
+            mobileMenu
+        ) {
+
+            menuButton.addEventListener(
+                "click",
+                function () {
+
+                    mobileMenu.classList.toggle(
+                        "hidden"
+                    );
+
+                }
+            );
+
+        }
+
+
+        
+
+        if (
+            document.getElementById(
+                "houseListings"
+            )
         ) {
 
             applyURLFilters();
@@ -811,11 +507,66 @@ document.addEventListener(
         }
 
 
-        if (
-            document.getElementById("apartmentListings")
-        ) {
 
-            displayApartments();
+        const homeSearchForm =
+            document.getElementById(
+                "homeSearchForm"
+            );
+
+
+        if (homeSearchForm) {
+
+            homeSearchForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    event.preventDefault();
+
+                    searchFromHome();
+
+                }
+            );
+
+        }
+
+
+
+        const contactForm =
+            document.getElementById(
+                "contactForm"
+            );
+
+
+        if (contactForm) {
+
+            contactForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    event.preventDefault();
+
+
+                    const formMessage =
+                        document.getElementById(
+                            "formMessage"
+                        );
+
+
+                    if (formMessage) {
+
+                        formMessage.textContent =
+                            "Thank you! Your message has been received.";
+
+                        formMessage.className =
+                            "mt-4 text-center text-green-600 font-semibold";
+
+                    }
+
+
+                    contactForm.reset();
+
+                }
+            );
 
         }
 
