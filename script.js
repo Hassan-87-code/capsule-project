@@ -1,8 +1,30 @@
 
 const houses = [
-
     {
         id: 1,
+        name: "Modern Bedsitter in Kileleshwa",
+        location: "Kileleshwa",
+        type: "Bedsitter",
+        price: 15000,
+        bedrooms: 0,
+        bathrooms: 1,
+        parking: true,
+        image: "kileleshwa bedsitter.jpg"
+    },
+
+    {
+        id: 2,
+        name: "Modern 1 Bedroom House in Kileleshwa",
+        location: "Kileleshwa",
+        type: "1 Bedroom",
+        price: 25000,
+        bedrooms: 1,
+        bathrooms: 1,
+        parking: true,
+        image: "kileleshwa 1 bedroom.jpg"
+    },
+    {
+        id: 3,
         name: "Modern House in Kileleshwa",
         location: "Kileleshwa",
         type: "2 Bedroom",
@@ -11,6 +33,40 @@ const houses = [
         bathrooms: 2,
         parking: true,
         image: "kileleshwa2bed.jpg"
+    },
+     {
+        id: 4,
+        name: "Spacious 3 Bedroom House in Kileleshwa",
+        location: "Kileleshwa",
+        type: "3 Bedroom",
+        price: 65000,
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: true,
+        image: "kileleshwa 3 bedroom.jpg"
+    },
+
+    {
+        id: 5,
+        name: "Luxury 4 Bedroom House in Kileleshwa",
+        location: "Kileleshwa",
+        type: "4 Bedroom",
+        price: 75000,
+        bedrooms: 4,
+        bathrooms: 4,
+        parking: true,
+        image: "kileleshwa 4 bedroom.jpg"
+    },
+    {
+        id: 6,
+        name: "Luxury Main House in Kileleshwa",
+        location: "Kileleshwa",
+        type: "Main House",
+        price: 120000,
+        bedrooms: 4,
+        bathrooms: 4,
+        parking: true,
+        image: "kileleshwa main house.jpg"
     },
 
     {
