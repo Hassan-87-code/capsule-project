@@ -218,7 +218,7 @@ function createPropertyCard(property) {
 
                 <button
                     onclick="viewProperty('${property.name}', '${property.location}')"
-                    class="w-full mt-5 bg-blue-600
+                    class="w-full mt-5 bg-green-600
                            hover:bg-blue-700 text-white
                            font-semibold py-3 rounded-lg">
 
