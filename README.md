@@ -18,7 +18,7 @@
 
 ## 📁 Project Structure
 
-```text
+
 capsule-project/
 ├── index.html
 ├── houses.html
